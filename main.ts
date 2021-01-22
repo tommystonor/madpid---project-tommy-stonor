@@ -1,5 +1,5 @@
 scene.setBackgroundColor(8)
-let mySprite = sprites.create(img`
+let MySpaceplane = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -17,3 +17,5 @@ let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
+MySpaceplane.setFlag(SpriteFlag.StayInScreen, true)
+info.setLife(3)
